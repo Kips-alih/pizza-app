@@ -5,6 +5,11 @@ function PizzaOrder(size,crust,topping,quantity,delivery){
   this.quantity=quantity;
   this.delivery=delivery;
 }
+
+PizzaOrder.prototype.totalCost=function(){ 
+  return (this.crust +this.size+this.topping+this.delivery)*this.quantity 
+};
+
 $(document).ready(function(){
   $("form#order-form").submit(function(event){
     event.preventDefault();
@@ -24,6 +29,8 @@ $(document).ready(function(){
       $("#summary-size").append(newPizzaOrder.size)
       $("#summary-quantity").append(newPizzaOrder.quantity)
       $("#summary-delivery").append(customerPizzaDelivery)
+      $("#summary-cost").append(newPizzaOrder.totalCost())
+
 
       alert("Delivery cost will be added")
 
@@ -34,8 +41,8 @@ $(document).ready(function(){
       $("#summary-size").append(newPizzaOrder.size)
       $("#summary-quantity").append(newPizzaOrder.quantity)
       $("#summary-delivery").append(customerPizzaDelivery)
+      $("#summary-cost").append(newPizzaOrder.totalCost())
 
-  
     }
     else{
       alert("All fields required!")
