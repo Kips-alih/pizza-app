@@ -9,6 +9,9 @@
 .top h1{
   margin-top: 100px;
 }
+h3{
+  text-transform: capitalize;
+}
 ul{
   list-style: none;
 }
@@ -23,13 +26,6 @@ ul{
 .table{
   border-collapse: collapse;
 }
-#contactUs{
-  background-image: url("../images/backgrounds/c-background.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50vh;
-}
-
 #make-order{
   background-image: url("../images/backgrounds/slice.jpeg");
   background-repeat: no-repeat;
@@ -37,4 +33,22 @@ ul{
 }
 table td{
   color: white;
+  font: 24px;
+}
+#contactUs{
+  background-image: url("../images/backgrounds/c-background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+  margin-top: 15px;
+}
+input#comment{
+  height: 200px;
+}
+.form-control{
+  background: transparent;
+}
+button{
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
