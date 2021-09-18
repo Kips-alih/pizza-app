@@ -74,6 +74,91 @@
         </div>
       </div>
     </div>
-    
+    <div class="container">
+      <div class="row text-center" id="make-order">
+        <h2>Order a pizza</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <h4>Ordering your pizza has been made easier!</h4>
+            <form id="order-form">
+              <div class="form-group">
+                <label for="pizza-size">Pizza size</label>
+                <select class="form-control pizza-size">
+                  <option selected disabled value="-"> Select size..</option>
+                  <option value="999">Large@ksh.999</option>
+                  <option value="799">Medium@ksh.799</option>
+                  <option value="549">Small@ksh.549</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="pizza-crust">Pizza crust</label>
+                <select class="form-control pizza-crust">
+                  <option selected disabled value="-"> choose crust..</option>
+                  <option value="70">Cheese-Stuffed@ksh.70</option>
+                  <option value="50">Pizza bagels@ksh.50</option>
+                  <option value="50">Thin crust@ksh.50</option>
+                  <option value="80">Chicago Deep Fish@ksh.80</option>
+                  <option value="50">FlatBread@ksh.50</option>
+                  <option value="70">Neapolitan@ksh.70</option>
+                  <option value="80">Sicilian@ksh.80</option>
+                  <option value="100">New York style</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="pizza-crust">Toppings</label>
+                <select class="form-control pizza-toppings">
+                  <option selected disabled value="-"> choose topping..</option>
+                  <option value="80">Pineapple@ksh.80</option>
+                  <option value="80">Black olives@ksh80</option>
+                  <option value="50">Green peppers@ksh50</option>
+                  <option value="50">Pepperoni@ksh50</option>
+                  <option value="50">Mushrooms@ksh50</option>
+                  <option value="50">Onions@ksh50</option>
+                  <option value="70">Extra cheese@ksh70</option>
+                  <option value="70">Spinach@ksh70</option>
+                  <option value="70">Bacon@ksh70</option>
+                </select>
+              </div>
+              <div class="form-group pizza-quantity">
+                <label for="quantity">Enter the quantity</label>
+                <input type="number" class="form-control" id="quantity">
+              </div>
+              <div class="form-group">
+                <label for="pick-delivery">Need it delivered or you'll pick?</label>
+                <select class="form-control pizza-delivery">
+                  <option selected disabled value="-"> deliver or pick..</option>
+                  <option value="150">Deliver</option>
+                  <option value="0">i"ll pick</option>
+                </select>
+              </div>
+              
+              <button  type="submit" class="btn bg-success">Checkout</button>
+            </form>
+            
+          </div>
+          <div class="col-md-6">
+            <p>Order cost summary</p>
+            <div class="table-responsive-md">
+              <table class="table">
+                <tr>
+                  <th>Pizza size</th>
+                  <th>pizza crust</th>
+                  <th>pizza topping</th>
+                  <th>Quantity</th>
+                  <th>Delivery</th>
+                  <th>total cost</th>
+                </tr>
+                <td id="summary-size"></td>
+                <td id="summary-crust"></td>
+                <td id="summary-topping"></td>
+                <td id="summary-quantity"></td>
+                <td id="summary-delivery"></td>
+                <td id="summary-cost"></td>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
