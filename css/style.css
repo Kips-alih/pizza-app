@@ -3,3 +3,11 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+ul{
+  list-style: none;
+}
+#menu img{
+  height: 200px;
+  width: 200px;
+
+}
