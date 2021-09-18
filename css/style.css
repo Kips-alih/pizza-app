@@ -1,8 +1,10 @@
 .top{
-  background-image: url("../images/top.jpeg");
+  background-image: url("../images/backgrounds/home.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height:50vh;
+  color: white;
+  text-transform: uppercase;
 }
 .top h1{
   margin-top: 100px;
@@ -20,4 +22,19 @@ ul{
 }
 .table{
   border-collapse: collapse;
+}
+#contactUs{
+  background-image: url("../images/backgrounds/c-background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+
+#make-order{
+  background-image: url("../images/backgrounds/slice.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+table td{
+  color: white;
 }
