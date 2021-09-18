@@ -48,7 +48,7 @@ $(document).ready(function(){
       alert("All fields required!")
     }
 
-
+    $("form").trigger("reset");
 
   });
 });
