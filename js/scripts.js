@@ -16,6 +16,30 @@ $(document).ready(function(){
     var customerPizzaDelivery=parseFloat($(this).find("select.pizza-delivery").val());
 
     var newPizzaOrder=new PizzaOrder(selectedSize,selectedCrust,selectedToppings,inputtedQuantity,customerPizzaDelivery);
+    if(selectedSize!==""&&selectedCrust!==""&&selectedToppings!==""&&inputtedQuantity!==""&&customerPizzaDelivery=="150"){
+      prompt("Please enter your location");
+
+      $("#summary-topping").append(newPizzaOrder.topping)
+      $("#summary-crust").append(newPizzaOrder.crust)
+      $("#summary-size").append(newPizzaOrder.size)
+      $("#summary-quantity").append(newPizzaOrder.quantity)
+      $("#summary-delivery").append(customerPizzaDelivery)
+
+      alert("Delivery cost will be added")
+
+    }
+    else if(selectedSize!==""&&selectedCrust!==""&&selectedToppings!==""&&inputtedQuantity!==""&&customerPizzaDelivery=="0"){
+      $("#summary-topping").append(newPizzaOrder.topping)
+      $("#summary-crust").append(newPizzaOrder.crust)
+      $("#summary-size").append(newPizzaOrder.size)
+      $("#summary-quantity").append(newPizzaOrder.quantity)
+      $("#summary-delivery").append(customerPizzaDelivery)
+
+  
+    }
+    else{
+      alert("All fields required!")
+    }
 
 
 
