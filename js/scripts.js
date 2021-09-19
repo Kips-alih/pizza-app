@@ -23,7 +23,6 @@ $(document).ready(function(){
     var newPizzaOrder=new PizzaOrder(selectedSize,selectedCrust,selectedToppings,inputtedQuantity,customerPizzaDelivery);
     if(selectedSize!==""&&selectedCrust!==""&&selectedToppings!==""&&inputtedQuantity!==""&&customerPizzaDelivery=="150"){
       prompt("Please enter your location");
-      $("#order-summary").show()
         $("#summary-topping").append(newPizzaOrder.topping)
         $("#summary-crust").append(newPizzaOrder.crust)
         $("#summary-size").append(newPizzaOrder.size)
@@ -31,8 +30,9 @@ $(document).ready(function(){
         $("#summary-delivery").append(customerPizzaDelivery)
         $("#summary-cost").append(newPizzaOrder.totalCost())
       
+         alert("Your order will be delivered to your location")
+         $("#order-summary").show()
 
-      alert("Delivery cost will be added")
 
     }
     else if(selectedSize!==""&&selectedCrust!==""&&selectedToppings!==""&&inputtedQuantity!==""&&customerPizzaDelivery=="0"){
@@ -50,6 +50,15 @@ $(document).ready(function(){
     }
 
     $("form").trigger("reset");
+
+  });
+});
+
+$(document).ready(function(){
+  $("form#confirm").submit(function(event){
+    event.preventDefault();
+    alert("Thank you for shoppping with us!Karibu Tena!!")
+    $("form#confirm").hide()
 
   });
 });
