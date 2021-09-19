@@ -35,6 +35,9 @@ table td{
   color: white;
   font: 24px;
 }
+#order-summary{
+  display: none;
+}
 #contactUs{
   background-image: url("../images/backgrounds/c-background.jpeg");
   background-repeat: no-repeat;
